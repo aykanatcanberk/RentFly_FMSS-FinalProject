@@ -8,6 +8,7 @@ RentFly, kullanıcıların araç kiralama işlemlerini kolayca gerçekleştirebi
 ## Proje Ek Dokümanları (Test otomasyonu için)
 
 Test otomasyonu ile ilgili ek dokümanlar "Proje Ek Dokümanları" klasöründe yer almaktadır. Bu klasörde aşağıdaki dosyalar bulunmaktadır:
+[🔗 Projenin grup çalışmalarını,İş Analizi kısmını da detaylı içeren grup dokümanı](https://github.com/aykanatcanberk/RentFly_FMSS-FinalProject/tree/main/Test%20Projesi%20Dokümanları-Demo%2CTest%20Case%20Dokümanı%20vs)
 
 - **Test Senaryoları, UML Diyagramı ve Sign Up Analiz Dokümanı:** Projeye dair test senaryolarını, UML diyagramını ve kullanıcı kayıt analiz dokümanını içeren tek bir Excel dosyası.
 
