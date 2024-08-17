@@ -34,3 +34,13 @@ Feature: Database Column and Constraint Validation
     Given a connection to the database
     When checking foreign key constraints
     Then the correct foreign key constraints should exist
+
+  Scenario: Verify phone column has unique constraint
+    Given a connection to the database
+    When checking if the phone column has a unique constraint
+    Then the phone column should have a unique constraint
+
+  Scenario: Verify gender column has valid constraints
+    Given a connection to the database
+    When checking the values in the gender column
+    Then the gender column should only contain M or F
