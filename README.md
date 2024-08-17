@@ -5,7 +5,7 @@ RentFly, kullanıcıların araç kiralama işlemlerini kolayca gerçekleştirebi
 
 ## Proje Ek Dokümanları
 
-Proje ile ilgili ek dokümanlar "Proje Ek Dokümanları" klasöründe yer almaktadır. Bu klasörde aşağıdaki dosyalar bulunmaktadır:
+Test otomasyonu ile ilgili ek dokümanlar "Proje Ek Dokümanları" klasöründe yer almaktadır. Bu klasörde aşağıdaki dosyalar bulunmaktadır:
 
 - **Test Senaryoları, UML Diyagramı ve Sign Up Analiz Dokümanı:** Projeye dair test senaryolarını, UML diyagramını ve kullanıcı kayıt analiz dokümanını içeren tek bir Excel dosyası.
 
