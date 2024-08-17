@@ -5,7 +5,7 @@ RentFly, kullanıcıların araç kiralama işlemlerini kolayca gerçekleştirebi
 ## İş Analizi ve Test Genel Detaylı Dokümanı
 [🔗 Projenin grup çalışmalarını,İş Analizi kısmını da detaylı içeren grup dokümanı](https://docs.google.com/spreadsheets/d/17TtlctgABjp5MfxRiA-k5OPA_wVDM5_3223XVGh0ex0/edit?gid=1248458228#gid=1248458228)
 
-## Proje Ek Dokümanları
+## Proje Ek Dokümanları (Test otomasyonu için)
 
 Test otomasyonu ile ilgili ek dokümanlar "Proje Ek Dokümanları" klasöründe yer almaktadır. Bu klasörde aşağıdaki dosyalar bulunmaktadır:
 
