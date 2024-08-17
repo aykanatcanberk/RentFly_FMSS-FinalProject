@@ -175,8 +175,6 @@ public class DatabaseUtils {
         return false;
     }
 
-    // Yeni Metodlar
-
     public static void checkBirthDateColumnNullable() {
         String query = "SELECT is_nullable FROM information_schema.columns " +
                 "WHERE table_name = 'signup' AND column_name = 'birth_date'";
