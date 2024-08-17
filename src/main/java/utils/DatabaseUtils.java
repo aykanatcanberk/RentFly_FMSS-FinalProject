@@ -112,7 +112,9 @@ public class DatabaseUtils {
     }
 
     public static boolean foreignKeysExist() {
-        String query = "SELECT constraint_name FROM information_schema.table_constraints WHERE table_name = 'signup' AND constraint_type = 'FOREIGN KEY'";
+        String query =
+                "SELECT constraint_name FROM information_schema.table_constraints WHERE table_name = " +
+                        "'signup' AND constraint_type = 'FOREIGN KEY'";
         try {
             ResultSet rs = executeQuery(query);
             return rs.next();
@@ -172,4 +174,64 @@ public class DatabaseUtils {
         }
         return false;
     }
+
+    // Yeni Metodlar
+
+    public static void checkBirthDateColumnNullable() {
+        String query = "SELECT is_nullable FROM information_schema.columns " +
+                "WHERE table_name = 'signup' AND column_name = 'birth_date'";
+        try {
+            ResultSet rs = executeQuery(query);
+            if (rs.next()) {
+                String isNullable = rs.getString("is_nullable");
+                columns.put("birth_date_nullable", isNullable);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static boolean isColumnNotNull(String columnName) {
+        return columns.containsKey(columnName + "_nullable") && "NO".equals(columns.get(columnName + "_nullable"));
+    }
+
+    public static void checkPhoneColumnUniqueConstraint() {
+        String query = "SELECT COUNT(*) AS total, COUNT(DISTINCT phone) AS unique_count FROM signup";
+        try {
+            ResultSet rs = executeQuery(query);
+            if (rs.next()) {
+                int total = rs.getInt("total");
+                int uniqueCount = rs.getInt("unique_count");
+                columns.put("phone_unique", total == uniqueCount ? "true" : "false");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static boolean isColumnUnique(String columnName) {
+        return columns.get(columnName + "_unique").equals("true");
+    }
+
+    public static void checkGenderColumnConstraints() {
+        String query = "SELECT DISTINCT gender FROM signup";
+        try {
+            ResultSet rs = executeQuery(query);
+            while (rs.next()) {
+                String gender = rs.getString("gender");
+                if (!"M".equals(gender) && !"F".equals(gender)) {
+                    columns.put("gender_valid", "false");
+                    return;
+                }
+            }
+            columns.put("gender_valid", "true");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static boolean isGenderColumnValid() {
+        return "true".equals(columns.get("gender_valid"));
+    }
+
 }
