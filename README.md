@@ -1,4 +1,4 @@
-# RentFly
+# RentFly [🔗 Projenin Detaylı Dökümanı](https://docs.google.com/spreadsheets/d/17TtlctgABjp5MfxRiA-k5OPA_wVDM5_3223XVGh0ex0/edit?gid=1248458228#gid=1248458228)
 
 RentFly, kullanıcıların araç kiralama işlemlerini kolayca gerçekleştirebileceği bir uygulamadır. Proje, kullanıcı dostu arayüzü ve kapsamlı işlevleriyle araç kiralama süreçlerini basitleştirmeyi hedefler.
 
