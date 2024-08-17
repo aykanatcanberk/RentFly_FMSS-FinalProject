@@ -14,7 +14,7 @@ Veritabanı test sonuçlarını gösteren bir görsel dosyası, proje klasörün
 
 ## Uygulama Demosu
 
-RentFly uygulamasının nasıl çalıştığını gösteren bir video demosu da dokümanlara eklenmiştir. Bu video, uygulamanın temel işlevlerini ve kullanıcı arayüzünü tanıtmaktadır. Video dosyasını [bu bağlantıdan](./demo.mp4) izleyebilirsiniz.
+RentFly uygulamasının nasıl çalıştığını gösteren bir video demosu da dokümanlara eklenmiştir. Bu video, uygulamanın temel işlevlerini ve kullanıcı arayüzünü tanıtmaktadır. Video dosyasını [[bu bağlantıdan](https://github.com/aykanatcanberk/RentFly_test/blob/main/Proje%20Ek%20Dokümanları-Demo%2CTest%20Case%20Dokümanı%20vs/rentfly_video-demo.mp4)] izleyebilirsiniz.
 
 #Projenin Detayları
 
