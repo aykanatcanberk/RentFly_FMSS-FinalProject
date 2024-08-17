@@ -88,4 +88,25 @@ public class DatabaseSteps {
     public void validateForeignKeyConstraints() {
         assertTrue(DatabaseUtils.foreignKeysExist("signup", "social", "social_id"));
     }
+
+    @When("checking if the phone column has a unique constraint")
+    public void checkPhoneColumnUniqueConstraint() {
+        DatabaseUtils.checkPhoneColumnUniqueConstraint();
+    }
+
+    @Then("the phone column should have a unique constraint")
+    public void validatePhoneColumnUniqueConstraint() {
+        assertTrue(DatabaseUtils.isColumnUnique("phone"));
+    }
+    @When("checking the values in the gender column")
+    public void checkGenderColumnConstraints() {
+        DatabaseUtils.checkGenderColumnConstraints();
+    }
+
+    @Then("the gender column should only contain M or F")
+    public void validateGenderColumnConstraints() {
+        assertTrue(DatabaseUtils.isGenderColumnValid());
+    }
+
+
 }
