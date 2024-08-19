@@ -24,6 +24,6 @@ RentFly uygulamasının nasıl çalıştığını gösteren bir video demosu da 
 
 RentFly projesinin tüm iş analizi süreçlerinin ve proje detaylarının bulunduğu  dokümana aşağıdaki linkten ulaşabilirsiniz:
 
-[🔗 Projenin Detaylı Dökümanı](https://docs.google.com/spreadsheets/d/17TtlctgABjp5MfxRiA-k5OPA_wVDM5_3223XVGh0ex0/edit?gid=1248458228#gid=1248458228)
+[🔗 Projenin Detaylı Dokümanı](https://docs.google.com/spreadsheets/d/17TtlctgABjp5MfxRiA-k5OPA_wVDM5_3223XVGh0ex0/edit?gid=1248458228#gid=1248458228)
 
 Bu link, RentFly projesi "İş Analizi ve Test" kısımları hakkında kapsamlı bilgilerin hepsinin tutulduğu belgedir. Projenin tüm adımlarını, iş analizlerini,metodlarını ve detaylarını burada bulabilirsiniz.
